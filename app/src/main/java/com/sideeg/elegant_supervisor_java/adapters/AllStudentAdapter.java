@@ -7,10 +7,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.sideeg.elegant.R;
-import com.sideeg.elegant.fragment.StudentDetailsFragment;
-import com.sideeg.elegant.model.StudentData;
-import com.sideeg.elegant.utiltiy.StaticElemaents;
+import com.sideeg.elegant_supervisor_java.R;
+import com.sideeg.elegant_supervisor_java.models.StudentData;
 
 import java.util.List;
 
@@ -41,18 +39,18 @@ public class AllStudentAdapter extends RecyclerView.Adapter<AllStudentAdapter.Vi
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
         viewHolder.studentName.setText(studentData.get(i).getStudentName());
-        if (studentData.get(i).getStudentSupervisor() !=null)
-            viewHolder.studentSuperVisorName.setText(studentData.get(i).getStudentSupervisor().getSupervisorName());
-        viewHolder.studentClassName.setText(studentData.get(i).getStudentClassName());
-        viewHolder.layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                StaticElemaents.setStudentData(studentData.get(i));
-                FragmentTransaction ft =((FragmentActivity) view.getContext()).getSupportFragmentManager().beginTransaction();
-                ft.replace(R.id.container, new StudentDetailsFragment());
-                ft.commit();
-            }
-        });
+//        if (studentData.get(i).getStudentSupervisor() !=null)
+//            viewHolder.studentSuperVisorName.setText(studentData.get(i).getStudentSupervisor().getSupervisorName());
+//        viewHolder.studentClassName.setText(studentData.get(i).getStudentClassName());
+//        viewHolder.layout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                StaticElemaents.setStudentData(studentData.get(i));
+//                FragmentTransaction ft =((FragmentActivity) view.getContext()).getSupportFragmentManager().beginTransaction();
+//                ft.replace(R.id.container, new StudentDetailsFragment());
+//                ft.commit();
+//            }
+//        });
 
     }
 

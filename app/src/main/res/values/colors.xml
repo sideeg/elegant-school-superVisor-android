@@ -4,4 +4,10 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#FEF700</color>
     <color name="colorblue">#1B337D</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="orange_gradient_start">#e98723</color>
+    <color name="orange_gradient_end">#fa7501</color>
+
+    <color name="DefaultButton">#1B337D</color>
 </resources>
