@@ -6,7 +6,8 @@ import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.widget.Toast;
 
-import com.sideeg.elegant.R;
+
+import com.sideeg.elegant_supervisor_java.R;
 
 import java.util.ArrayList;
 

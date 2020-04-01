@@ -9,8 +9,9 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.preference.PreferenceManager;
 
-import com.sideeg.elegant.activities.SplashActivity;
-import com.sideeg.elegant.model.SchoolData;
+
+import com.sideeg.elegant_supervisor_java.activities.SplashActivity;
+import com.sideeg.elegant_supervisor_java.models.SchoolData;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -54,7 +55,7 @@ public class SessionManger {
     }
 
 
-    public SessionManger(SchoolData schoolData,Context context){
+    public SessionManger(SchoolData schoolData, Context context){
         this.context = context;
         mPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         editor = mPreferences.edit();

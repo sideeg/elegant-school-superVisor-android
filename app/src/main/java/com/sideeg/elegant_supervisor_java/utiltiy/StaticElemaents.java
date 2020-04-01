@@ -1,9 +1,10 @@
 package com.sideeg.elegant_supervisor_java.utiltiy;
 
-import com.sideeg.elegant.model.ParentData;
-import com.sideeg.elegant.model.SchoolData;
-import com.sideeg.elegant.model.StudentData;
-import com.sideeg.elegant.model.SuperVisorData;
+
+import com.sideeg.elegant_supervisor_java.models.ParentData;
+import com.sideeg.elegant_supervisor_java.models.SchoolData;
+import com.sideeg.elegant_supervisor_java.models.StudentData;
+import com.sideeg.elegant_supervisor_java.models.SuperVisorData;
 
 public  class StaticElemaents {
     private static SuperVisorData superVisorData;
